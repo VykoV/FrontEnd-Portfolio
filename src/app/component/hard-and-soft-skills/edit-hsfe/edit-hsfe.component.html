@@ -1,0 +1,35 @@
+<div class="BG" id="formu">
+    <div class="container" *ngIf="hardSkillFrontEnd">
+    <div class="row">
+        <h2 class="text-center">Editar Hard Skill Front End</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="icono">Icono</label>
+                <input type="text" class="form-control" id="icono" [(ngModel)]="hardSkillFrontEnd.icono" name="icono"
+                    requerid>
+            </div>
+            <div class="form-group">
+                <label for="nombreFrontEnd">Nombre de la Skill Front End</label>
+                <input type="text" class="form-control" id="nombreFrontEnd" [(ngModel)]="hardSkillFrontEnd.nombreFrontEnd" name="nombreFrontEnd"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="nivelFrontEnd">Nivel Skill Front End</label>
+                <input type="text" class="form-control" id="nivelFrontEnd" [(ngModel)]="hardSkillFrontEnd.nivelFrontEnd"
+                    name="nivelFrontEnd" required>
+            </div>
+            <div class="form-group">
+                <label for="porcentaje">Porcentaje</label>
+                <input type="text" class="form-control" id="porcentaje" [(ngModel)]="hardSkillFrontEnd.porcentaje"
+                    name="porcentaje" required>
+            </div>
+            
+            <br/>
+            <div class="d-grid mb-5 col-3 mx-auto">
+                <button type="submit" class="btn btn-warning">Ingresar informacion</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>

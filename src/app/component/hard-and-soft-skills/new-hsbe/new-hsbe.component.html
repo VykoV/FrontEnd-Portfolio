@@ -1,0 +1,36 @@
+<div class="BG" id="formu">
+    <div class="container">
+    <div class="row">
+        <h2 class="text-center">Agregar Hard Skill BackEnd</h2>
+        <form ngForm #f="ngForm" (ngSubmit)="onCreate()" novalidate>
+            <div class="form-group">
+                <label for="icono">Icono</label>
+                <input type="text" class="form-control" id="icono" [(ngModel)]="icono" name="icono"
+                    requerid>
+            </div>
+            <div class="form-group">
+                <label for="nombreBackEnd">Nombre de la skill Back End</label>
+                <input type="text" class="form-control" id="nombreBackEnd" [(ngModel)]="nombreBackEnd" name="nombreBackEnd"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="nivelBackEnd">Nivel Skill Back End</label>
+                <input type="text" class="form-control" id="nivelBackEnd" [(ngModel)]="nivelBackEnd"
+                    name="nivelBackEnd" required>
+            </div>
+
+            <div class="form-group">
+                <label for="porcentaje">Porcentaje</label>
+                <input type="text" class="form-control" id="porcentaje" [(ngModel)]="porcentaje"
+                    name="porcentaje" required>
+            </div>
+            
+            <br/>
+            <div class="d-grid mb-5 col-3 mx-auto">
+                <button type="submit" class="btn btn-warning">Ingresar informacion</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>

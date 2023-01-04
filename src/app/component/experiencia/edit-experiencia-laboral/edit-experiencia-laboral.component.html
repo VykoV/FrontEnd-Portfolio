@@ -1,0 +1,50 @@
+<div class="BG" id="formu">
+    <div class="container" *ngIf="experienciaLaboral">
+    <div class="row">
+        <h2 class="text-center">Editar Experiencia Laboral</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <input type="text" class="form-control" id="descripcion" [(ngModel)]="experienciaLaboral.descripcion" name="descripcion"
+                    requerid>
+            </div>
+
+            <div class="form-group">
+                <label for="imgEmpresa">imgEmpresa</label>
+                <input type="text" class="form-control" id="imgEmpresa" [(ngModel)]="experienciaLaboral.imgEmpresa" name="imgEmpresa"
+                    requerid>
+            </div>
+            <!-- <div class="form-group">
+                <label for="imgEmpresa">Imagen de la Empresa</label>
+                <input type="text" class="form-control" id="imgEmpresa" [(ngModel)]="experienciaLaboral.imgEmpresa" name="imgEmpresa"
+                    required>
+            </div>-->
+            <div class="form-group">
+                <label for="nombreEmpresa">Nombre de la Empresa</label>
+                <input type="text" class="form-control" id="nombreEmpresa" [(ngModel)]="experienciaLaboral.nombreEmpresa"
+                    name="nombreEmpresa" required>
+            </div>
+            <div class="form-group">
+
+                <label for="periodoPuestoFin">Fin del Puesto</label>
+                <input type="text" class="form-control" id="periodoPuestoFin" [(ngModel)]="experienciaLaboral.periodoPuestoFin"
+                    name="periodoPuestoFin" required>
+            </div>
+            <div class="form-group">
+                <label for="periodoPuestoInicio">Inicio del puesto</label>
+                <input type="text" class="form-control" id="periodoPuestoInicio" [(ngModel)]="experienciaLaboral.periodoPuestoInicio"
+                    name="periodoPuestoInicio" required>
+            </div>
+            <div class="form-group">
+                <label for="puesto">Puesto</label>
+                <input type="text" class="form-control" id="puesto" [(ngModel)]="experienciaLaboral.puesto" name="puesto" required>
+            </div>
+            <br/>
+            <div class="d-grid mb-5 col-3 mx-auto">
+                <button type="submit" class="btn btn-warning">Actualizar informacion</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="BG" id="formu">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center">Agregar Proyecto</h2>
+            <form ngForm #f="ngForm" (ngSubmit)="onCreate()" novalidate>
+                <div class="form-group">
+                    <label for="nombreProyecto">Nombre Proyecto</label>
+                    <input type="text" class="form-control" id="nombreProyecto" [(ngModel)]="nombreProyecto"
+                        name="nombreProyecto" requerid>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionProyecto">Descripcion Proyecto</label>
+                    <input type="text" class="form-control" id="descripcionProyecto" [(ngModel)]="descripcionProyecto" name="descripcionProyecto"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="urlImgProyecto">Imagen del Proyecto</label>
+                    <input type="text" class="form-control" id="urlImgProyecto" [(ngModel)]="urlImgProyecto"
+                        name="urlImgProyecto" required>
+                </div>
+                <div class="form-group">
+
+                    <label for="urlRepositorio">Url Repositorio</label>
+                    <input type="text" class="form-control" id="urlRepositorio" [(ngModel)]="urlRepositorio"
+                        name="urlRepositorio" required>
+                </div>
+                <br />
+                <div class="d-grid mb-5 col-3 mx-auto">
+                    <button type="submit" class="btn btn-warning">Ingresar informacion</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

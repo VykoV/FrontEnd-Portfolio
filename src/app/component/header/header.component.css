@@ -1,0 +1,18 @@
+.header .nav {
+    left:0%;
+    top: 0%;
+    width: 100%;
+
+}
+
+#YoProgramo{
+    padding: 1rem;
+    font-size: medium;
+}
+
+@media screen and (max-width: 350px){
+    #YoProgramo{
+        display: none;
+    }
+}
+

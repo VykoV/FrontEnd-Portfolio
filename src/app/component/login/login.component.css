@@ -1,0 +1,9 @@
+#color1{
+    background-color: black;
+}
+
+.imagenlogo{
+    background-image: url(../../../assets/img/1218911.jpg) ;
+    background-position: center center;    
+    background-size: cover;
+}

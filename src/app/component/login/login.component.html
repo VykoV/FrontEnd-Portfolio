@@ -1,0 +1,41 @@
+<div class="BG">
+    <div class=" container w-75 bg-secondary mt-5 rounded shadow " >
+        <div class="row align-items-stretch">
+            
+            <div class="col imagenlogo d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"> <!-- Para la imagen -->
+            </div>
+            
+            <div class="col p-5 rounded-end" id="BGLogin" > <!--Para el form-->
+                <h2 class="fw-bold text-center pt-5 mb-5">¡Bienvenido!</h2>
+                <!-- Login -->
+                <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+                    <div class="mb-4">
+                        <label for="nombreUsuario" class="form-label">Usuario</label>
+                        <input type="usuario"id="nombreUsuario" class="form-control" name="nombreUsuario" [(ngModel)]="nombreUsuario" name ="nombreUsuario" requerid>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" id="password" class="form-control" name="password" [(ngModel)]="password" name="password" requerid>
+                    </div>
+                    
+                    <!--<div class="mb-4">
+                        <input type="checkbox" name="connected" class="form-check-input" >
+                        <label for="connected" class="form-check-label">Reconectarme</label>
+                    </div>-->
+    
+                    <div class="d-grid mb-5">
+                        <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                    </div>
+                    
+                    <!--<div class="d-grid mb-5">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </div>-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    

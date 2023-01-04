@@ -1,0 +1,76 @@
+{
+    "persona":{
+            "imgBanner": "../assets/img/1218911.jpg",
+            "imgPerfil": "../assets/img/pngegg.png",
+            "nombrePerfil": "Victoria Valli",
+            "titulo": "Full stack Developer Jr"
+        },
+    
+
+    "acercaDeMi": {
+        "destacable": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "InformacionAcercaDeMi": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla accusantium laborum obcaecati hic, laudantium maiores magni cupiditate fuga ab deserunt porro! Deserunt magnam eum, atque accusamus ad quae. Ipsam."
+    },
+
+    "experienciaLaboral":[ 
+        {
+            "idexperienciaLaboral": 0,
+            "imgEmpresa":"...",
+            "nombreEmpresa":"Nombre Empresa",
+            "puesto": "Nombre Puesto",
+            "periodoPuestoInicio": "Periodo Puesto Inicio",
+            "periodoPuestoFin": "Periodo Puesto Fin",
+            "descripcionPuesto":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla accusantium laborum obcaecati hic, laudantium maiores magni cupiditate fuga ab deserunt porro!"
+        }
+    ],
+
+    "educacion":[ 
+        {
+            "idEducacion": 0,
+            "logo": "...",
+            "nombreCurso":" Nombre Curso",
+            "carrera_curso":" Carrera curso",
+            "titulo": "Titulo",
+            "periodoEstudiosInicio":"Periodo Puesto Inicio",
+            "periodoEstudiosFin":"Periodo Puesto Fin"
+        }
+    ],
+
+    "hardAndSoftSkills": [ 
+        {
+            "skillFrontEnd":{
+                "idFrontEnd": 1,
+                "icono": "bi bi-filetype-html",
+                "nombreFrontEnd": "HTML",
+                "nivelFrontEnd": "Intermedio",
+                "porcentaje": 60
+            },
+            "skillBackEnd":{
+                "idBackEnd": 1,
+                "icono": "bi bi-filetype-sql",
+                "nombreBackEnd": "MySQL",
+                "nivelBackEnd": "Basico",
+                "porcentaje": 20
+            },
+            "softSkill":{
+                "idSkill": 1,
+                "icono": "bi bi-book",
+                "nombreSkill": "Ingles",
+                "nivelSkill": "Basico",
+                "porcentaje": 30
+            }
+        }
+    ],
+
+    "proyectos":[ 
+        {
+            "id": 0,
+            "nombreProyecto": "Proyecto 1",
+            "descripcionProyecto":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis numquam amet, doloribus nam deleniti, molestiae tenetur nesciunt corporis praesentium, excepturi delectus porro dolorum eaque aliquid necessitatibus veritatis. Ipsam, natus!.",
+            "urlImgProyecto":"../assets/img/Prueba 2.jpg",
+            "urlRepositorio":"https://www.youtube.com/watch?v=ruyklb_aH8I"
+        }
+    ]
+
+
+}

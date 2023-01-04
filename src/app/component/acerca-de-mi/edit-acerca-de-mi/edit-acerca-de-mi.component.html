@@ -1,0 +1,25 @@
+<div class="BG" id="formu">
+    <div class="container" *ngIf="acercaDeMi">
+    <div class="row">
+        <h2 class="text-center">Editar Acerca De Mi</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="destacable">Destacable</label>
+                <input type="text" class="form-control" id="destacable" [(ngModel)]="acercaDeMi.destacable" name="destacable"
+                    requerid>
+            </div>
+
+            <div class="form-group">
+                <label for="informacionAcercaDeMi">Informacion Acerca De Mi</label>
+                <input type="text" class="form-control" id="informacionAcercaDeMi" [(ngModel)]="acercaDeMi.informacionAcercaDeMi" name="informacionAcercaDeMi"
+                    requerid>
+            </div>
+            <br/>
+            <div class="d-grid mb-5 col-3 mx-auto">
+                <button type="submit" class="btn btn-warning">Actualizar informacion</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</div>

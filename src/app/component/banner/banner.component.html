@@ -1,0 +1,20 @@
+<!--   banner -->  
+<div *ngFor="let personas of persona">
+  
+  <div  id="banner" class="conteiner d-lg-block ">
+    <img  [src]="personas.imgBanner" class="img-fluid">
+  </div> 
+  
+  <div id="FotoPerfil" class="container">
+    <div class="row">
+      <div class="col-12 pt-3 ">
+          <h4 class="text-end "><i class="bi bi-pencil-square p-1" routerLink="/editarpersona/{{personas.id}}"
+            *ngIf="isLogged"></i></h4>
+      </div>
+  </div> 
+    <img [src]="personas.imgPerfil" height=250px width=250px>
+    <h1 >{{personas.nombrePerfil}}</h1>
+    <h2 >{{personas.titulo}}</h2>
+  </div>
+  
+</div>

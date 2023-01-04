@@ -1,0 +1,40 @@
+<div class="container">
+    <!-- Proyectos -->
+
+    <div id="Proyectos" class="row">
+        <div class="row">
+            <div class="col-6">
+                <h3>Proyectos</h3>
+            </div>
+            <div class="col-6 ">
+                <h4 class="text-end "><i class="bi bi-file-earmark-plus" routerLink="/nuevoproyecto" *ngIf="isLogged"></i>
+                </h4>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-around">
+                <div class="col-auto " *ngFor="let pyt of proyectos">
+                    <div id="Proyectocolor1" class="card" style="width: 16rem;">
+                        <img [src]="pyt.urlImgProyecto" class="card-img-top" alt="{{pyt.nombreProyecto}}">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="card-title">{{pyt.nombreProyecto}} </h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="text-end"> <i class="bi bi-pencil-square p-1" routerLink="/editarproyecto/{{pyt.id}}" *ngIf="isLogged"></i><i
+                                            class="bi bi-trash3-fill" *ngIf="isLogged" (click)="deleteProyectos(pyt.id)"></i></h5>
+                                </div>
+                            </div>
+                            <p class="card-text">{{pyt.descripcionProyecto}}</p>
+                            <a href="{{pyt.urlRepositorio}}" class="btn btn-warning d-grid m-1">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+    </div>
+
+
+</div>

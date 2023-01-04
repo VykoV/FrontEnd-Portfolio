@@ -1,0 +1,113 @@
+<div class="container"  >
+    <!-- Progress -->
+    <div class="row my-5"   >
+        <h3>Hard & Soft Skills</h3>
+    
+        <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+        
+        <!--FrontEnd-->
+            <div class="row">
+                <div class="col-6">
+                    <h3>FrontEnd</h3>
+                </div>
+                
+                <div class="col-6 ">
+                    <h4 class="text-end ">
+                        <i class="bi bi-file-earmark-plus" routerLink="/nuevahsfe" *ngIf="isLogged"></i>
+                        </h4>
+                </div>
+            </div>  
+            <ul class="Moditems">
+                <li *ngFor="let sfe of hardSkillFrontEnd">
+                    <div class="pt-2">
+                        <div class="row">
+                            <div class="col-9">
+                                <h4><i class={{sfe.icono}}></i> {{sfe.nombreFrontEnd}}</h4>
+                            </div>
+
+                            <div class="col-3 ">
+                                <h4 class="text-end ">
+                                    <i class="bi bi-pencil-square p-1" routerLink="/editarhsfe/{{sfe.id}}" *ngIf="isLogged"></i>
+                                    <i class="bi bi-trash3-fill"  *ngIf="isLogged" (click)="deleteHardSkillFrontEnd(sfe.id)"></i></h4>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Success example" [style.width]=" sfe.porcentaje +'%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{sfe.nivelFrontEnd}}</div>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+
+    <!-- BackEnd-->
+        <div class="col-sm-12 col-md-4 col-lg-4 mt-2">
+            <div class="row">
+                <div class="col-6">
+                    <h3>BackEnd</h3>
+                </div>
+                <div class="col-6 ">
+                    <h4 class="text-end ">
+                        <i class="bi bi-file-earmark-plus p-1" routerLink="/nuevahsbe" *ngIf="isLogged"></i>
+                    </h4>
+                </div>
+            </div> 
+            
+            <ul class="Moditems">
+                <li *ngFor="let sbe of hardSkillBackEnd">
+                    <div class="row pt-2">
+                        <div class="col-9"> 
+                            <h4><i class={{sbe.icono}}></i> {{sbe.nombreBackEnd}}</h4>
+                        </div>
+
+                        <div class="col-3 ">
+                            <h4 class="text-end ">
+                                <i class="bi bi-pencil-square p-1" routerLink="/editarhsbe/{{sbe.id}}" *ngIf="isLogged"></i>
+                                <i class="bi bi-trash3-fill"*ngIf="isLogged" (click)="deleteHardSkillBackEnd(sbe.id)" ></i></h4>
+                        </div>
+                </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Success example" [style.width]=" sbe.porcentaje +'%' " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{sbe.nivelBackEnd}}</div>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+
+    <!-- Soft Skills -->
+        <div class="col-sm-12 col-md-4 col-lg-4 mt-2" >
+            
+            <div class="row">
+                <div class="col-6">
+                    <h3>SoftSkill</h3>
+                </div>
+                <div class="col-6 ">
+                    <h4 class="text-end ">
+                        <i class="bi bi-file-earmark-plus" routerLink="/nuevass" *ngIf="isLogged"></i>
+                        
+                    </h4>
+                </div>
+            </div> 
+            
+            <ul class="Moditems">
+                <li *ngFor="let ss of softSkill">
+                    <div class="row pt-2">
+                        <div class="col-9">
+                            <h4><i class={{ss.icono}}></i> {{ss.nombreSkill}}</h4>
+                        </div>
+                        <div class="col-3">
+                            <h4 class="text-end">
+                                <i class="bi bi-pencil-square p-1" routerLink="/editarss/{{ss.id}}" *ngIf="isLogged"></i>
+                                <i class="bi bi-trash3-fill" *ngIf="isLogged" (click)="deleteSoftSkill(ss.id)"></i>
+                            </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" [style.width]=" ss.porcentaje +'%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ss.nivelSkill}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+<!--<div class="container ">
+    <div class="row my-5">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Experiencia</h3>
+                </div>
+                <div class="col-6 ">
+                    <h4 class="text-end ">
+                        <i class="bi bi-file-earmark-plus"></i>
+                    </h4>
+                </div>
+            </div> 
+            
+            <ul class="Moditems">
+                <li *ngFor="let Experiencia of experienciaLaboral">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img [src]="Experiencia.imgEmpresa" width="200px" class="img-fluid "/>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-9 ">
+                                    <p><b>{{Experiencia.nombreEmpresa}}</b></p>
+                                </div>
+                                
+                                <div class="col-3 ">
+                                    <p class="text-end ">
+                                        <i class="bi bi-pencil-square p-1"></i>
+                                        <i class="bi bi-trash3-fill"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        <p>{{Experiencia.periodoPuestoInicio}} - {{Experiencia.periodoPuestoFin}}</p>
+                        <p>{{Experiencia.puesto}}</p>
+                        <p><i>{{Experiencia.descripcion}}</i></p>
+                        
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-lg-6">
+
+            <div class="row">
+                <div class="col-6">
+                    <h3>Educacion</h3>
+                </div>
+                <div class="col-6 ">
+                    
+                </div>
+            </div> 
+            
+            <ul class="Moditems">
+                <li *ngFor="let educacion of educacion">
+                    <div class="row">
+                        <div class="col-lg-3 ">
+                            <img [src]="educacion.logo" class="img-fluid"/>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-9"><p><b>{{educacion.nombreCurso}} - <p>{{educacion.carreraCurso}}</p></b></p></div>
+                                
+                                <div class="col-3 ">
+                                    <p class="text-end ">
+                                        <i class="bi bi-pencil-square p-1"></i>
+                                        <i class="bi bi-trash3-fill"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <p>{{educacion.periodoEstudiosInicio}}-{{educacion.periodoEstudiosFin}}</p>
+                            <p><i>{{educacion.titulo}}</i></p>
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+-->
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <ul class="Moditems">
+
+                <div id="Proyectocolor1" class="card mb-3" style="max-width: 600px;">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Educacion</h4>
+                            </div>
+                            <div class="col-6">
+                                <h4 class="text-end ">
+                                    <i class="bi bi-file-earmark-plus" routerLink="/nuevaeducacion" *ngIf="isLogged"></i>
+                                </h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+
+                        <li *ngFor="let educacion of educacion">
+                            <div class="row">
+                                <div class="col-lg-3 ">
+                                    <img [src]="educacion.logo" class="img-fluid" />
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <p><b>{{educacion.nombreCurso}} - <p>{{educacion.carreraCurso}}</p></b></p>
+                                        </div>
+
+                                        <div class="col-3 ">
+                                            <p class="text-end ">
+                                                <i class="bi bi-pencil-square p-1" routerLink="/editareducacion/{{educacion.id}}"
+                                                *ngIf="isLogged"></i>
+                                                <i class="bi bi-trash3-fill" *ngIf="isLogged" (click)="deleteEducacion(educacion.id)"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>{{educacion.periodoEstudiosInicio}}-{{educacion.periodoEstudiosFin}}
+                                    </p>
+                                    <p><i>{{educacion.titulo}}</i></p>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="col-lg-6">
+            <ul class="Moditems list-group list-group-flush">
+
+                <div id="Proyectocolor1" class="card mb-3" style="max-width: 600px;">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Experiencia</h4>
+                            </div>
+                            <!-- Boton -->
+                            <div class="col-6">
+                                <h4 class="text-end" routerLink="/nuevaexperiencia" *ngIf="isLogged">
+                                    <i class="bi bi-file-earmark-plus"></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <li *ngFor="let Experiencia of experienciaLaboral">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <img [src]="Experiencia.imgEmpresa" width="200px" class="img-fluid " />
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-9 ">
+                                            <p><b>{{Experiencia.nombreEmpresa}}</b></p>
+                                        </div>
+
+                                        <div class="col-3 ">
+                                            <p class="text-end ">
+                                                <i class="bi bi-pencil-square p-1"
+                                                    routerLink="/editarexperiencia/{{Experiencia.id}}"
+                                                    *ngIf="isLogged"></i>
+                                                <i class="bi bi-trash3-fill" *ngIf="isLogged"
+                                                    (click)="deleteExperienciaLaboral(Experiencia.id)"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>{{Experiencia.periodoPuestoInicio}} -
+                                        {{Experiencia.periodoPuestoFin}}</p>
+                                    <p>{{Experiencia.puesto}}</p>
+                                    <p><i>{{Experiencia.descripcion}}</i></p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>

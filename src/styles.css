@@ -1,0 +1,73 @@
+
+.light-theme{
+    --imgArgProg: 'assets/img/APLogo-20-20-min.png';
+    --background-color: #fffffe;
+    --text-color: #1a1a1a;
+    --Proyecto-color: #f8faff;
+    --button-color: #fffffe;
+    --pharagraph:#2d334a;
+}   
+
+.dark-theme{
+    --imgArgProg: 'assets/img/arg-programa';
+    --background-color: #0f0e17 ;
+    --text-color: #f5f5f5;
+    --Proyecto-color: #353535;
+    --button-color: #1a1a1a;
+    --pharagraph: #a7a9be;
+    
+}
+
+#modebg {
+    background-color: var(--nav-color);
+
+}
+
+#modebtn{
+    color: white;
+}
+
+.BG{
+    background-color: var(--background-color);
+}
+#BGLogin{
+    background-color: var(--Proyecto-color);
+}
+
+
+h1, h2, h3, h4, h5, h6, label{
+    color:var(--text-color);
+    margin-top: 5px;
+}
+
+p {
+    color:var(--text-color);
+    text-align: left;
+    margin-top: 5px;
+    color: var(--pharagraph);
+}
+
+#Proyectocolor1{
+    background-color: var(--Proyecto-color);
+}
+#Proyectocolor2{
+    background-color: var(--Proyecto-color);
+}
+#Proyectocolor3{
+    background-color: var(--Proyecto-color);
+
+}
+
+#message{
+    resize: none;
+}
+
+.toggle{
+    color:var(--button-color);
+}
+
+.Moditems{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

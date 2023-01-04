@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
-import { HardSkillBackEnd } from '../model/HardSkillBackEnd';
-import { HardSkillFrontEnd } from '../model/HardSkillFrontEnd';
-import { SoftSkill } from '../model/SoftSkill';
-import { HardSkillBackEndService } from '../Service/hardskillbackend.service';
-import { HardSkillFrontEndService } from '../Service/hardskillfrontend.service';
-import { SoftSkillService } from '../Service/softskill.service';
-import { TokenService } from '../Service/token.service';
+import { HardSkillBackEnd } from '../../model/HardSkillBackEnd';
+import { HardSkillFrontEnd } from '../../model/HardSkillFrontEnd';
+import { SoftSkill } from '../../model/SoftSkill';
+import { HardSkillBackEndService } from 'src/app/Service/hardskillbackend.service';
+import { HardSkillFrontEndService } from 'src/app/Service/hardskillfrontend.service';
+import { SoftSkillService } from 'src/app/Service/softskill.service';
+import { TokenService } from 'src/app/Service/token.service';
 
 @Component({
   selector: 'app-hard-and-soft-skills',

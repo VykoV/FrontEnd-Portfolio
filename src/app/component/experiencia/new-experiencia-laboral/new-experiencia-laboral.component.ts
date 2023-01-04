@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
-import { ExperienciaLaboral } from '../../model/experienciaLaboral';
-import { ExperienciaLaboralService } from '../../Service/experiencialaboral.service';
+import { ExperienciaLaboral } from '../../../model/experienciaLaboral';
+import { ExperienciaLaboralService } from 'src/app/Service/experiencialaboral.service';
 
 @Component({
   selector: 'app-new-experiencia-laboral',

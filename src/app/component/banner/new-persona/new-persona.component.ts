@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { persona } from '../../model/persona.model';
-import { PersonaService } from '../../Service/persona.service';
+import { persona } from '../../../model/persona.model';
+import { PersonaService } from 'src/app/Service/persona.service';
 
 @Component({
   selector: 'app-new-persona',

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HardSkillBackEnd } from '../model/HardSkillBackEnd';
+import { HardSkillBackEnd } from 'src/app/model/HardSkillBackEnd';
 
 
 @Injectable({

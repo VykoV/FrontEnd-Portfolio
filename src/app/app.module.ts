@@ -26,11 +26,12 @@ import { NewHSFEComponent } from './component/hard-and-soft-skills/new-hsfe/new-
 import { EditHSFEComponent } from './component/hard-and-soft-skills/edit-hsfe/edit-hsfe.component';
 import { EditProyectosComponent } from './component/proyectos/edit-proyectos/edit-proyectos.component';
 import { NewProyectosComponent } from './component/proyectos/new-proyectos/new-proyectos.component';
-import { NewAcercaDeMiComponent } from './component/acerca-de-mi/new-acerca-de-mi/new-acerca-de-mi.component';
+
 import { EditAcercaDeMiComponent } from './component/acerca-de-mi/edit-acerca-de-mi/edit-acerca-de-mi.component';
 import { EditPersonaComponent } from './component/banner/edit-persona/edit-persona.component';
 import { NewPersonaComponent } from './component/banner/new-persona/new-persona.component';
-
+import { AcercaDeMiModalComponent } from './modal/acerca-de-mi-modal/acerca-de-mi-modal.component';
+import { EditarAcercaDeMiComponent } from './modal/editar-acerca-de-mi/editar-acerca-de-mi.component';
 
 
 @NgModule({
@@ -56,10 +57,13 @@ import { NewPersonaComponent } from './component/banner/new-persona/new-persona.
     EditHSFEComponent,
     EditProyectosComponent,
     NewProyectosComponent,
-    NewAcercaDeMiComponent,
+
     EditAcercaDeMiComponent,
     EditPersonaComponent,
-    NewPersonaComponent
+    NewPersonaComponent,
+    AcercaDeMiModalComponent,
+    EditarAcercaDeMiComponent
+
   ],
   imports: [
     BrowserModule,

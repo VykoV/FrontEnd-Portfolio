@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SoftSkill } from '../../model/SoftSkill';
-import { SoftSkillService } from '../../Service/softskill.service';
+import { SoftSkill } from '../../../model/SoftSkill';
+import { SoftSkillService } from 'src/app/Service/softskill.service';
 
 @Component({
   selector: 'app-new-sskill',

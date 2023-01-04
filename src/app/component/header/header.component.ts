@@ -1,9 +1,9 @@
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
-import { PorfolioService } from 'src/app/component/Service/porfolio.service';
+import { PorfolioService } from 'src/app/Service/porfolio.service';
 import { Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
 import { DOCUMENT } from '@angular/common'; 
-import { TokenService } from '../Service/token.service';
+import { TokenService } from 'src/app/Service/token.service';
 import { Router } from '@angular/router';
 
 @Component({

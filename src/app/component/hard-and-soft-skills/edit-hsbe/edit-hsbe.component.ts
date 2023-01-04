@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HardSkillBackEnd } from '../../model/HardSkillBackEnd';
-import { HardSkillBackEndService } from '../../Service/hardskillbackend.service';
+import { HardSkillBackEnd } from '../../../model/HardSkillBackEnd';
+import { HardSkillBackEndService } from 'src/app/Service/hardskillbackend.service';
 
 @Component({
   selector: 'app-edit-hsbe',

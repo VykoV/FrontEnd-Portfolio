@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { SoftSkill } from '../model/SoftSkill';
+import { SoftSkill } from 'src/app/model/SoftSkill';
 
 
 

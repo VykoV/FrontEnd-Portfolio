@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
-import { Educacion } from '../model/educacion';
-import { ExperienciaLaboral } from '../model/experienciaLaboral';
-import { EducacionService } from '../Service/educacion.service';
-import { ExperienciaLaboralService } from '../Service/experiencialaboral.service';
-import { TokenService } from '../Service/token.service';
+import { Educacion } from '../../model/educacion';
+import { ExperienciaLaboral } from '../../model/experienciaLaboral';
+import { EducacionService } from 'src/app/Service/educacion.service';
+import { ExperienciaLaboralService } from 'src/app/Service/experiencialaboral.service';
+import { TokenService } from 'src/app/Service/token.service';
 
 @Component({
   selector: 'app-experiencia',

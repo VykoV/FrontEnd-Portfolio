@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
-import { AcercaDeMi } from '../model/acercademi';
-import { AcercademiService } from '../Service/acercademi.service';
-import { TokenService } from '../Service/token.service';
+import { AcercaDeMi } from '../../model/acercademi';
+import { AcercademiService } from 'src/app/Service/acercademi.service';
+import { TokenService } from 'src/app/Service/token.service';
 
 @Component({
   selector: 'app-acerca-de-mi',

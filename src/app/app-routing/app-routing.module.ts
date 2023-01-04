@@ -16,8 +16,7 @@ import { NewHSBEComponent } from '../component/hard-and-soft-skills/new-hsbe/new
 import { EditHSBEComponent } from '../component/hard-and-soft-skills/edit-hsbe/edit-hsbe.component';
 import { NewProyectosComponent } from '../component/proyectos/new-proyectos/new-proyectos.component';
 import { EditProyectosComponent } from '../component/proyectos/edit-proyectos/edit-proyectos.component';
-import { NewAcercaDeMiComponent } from '../component/acerca-de-mi/new-acerca-de-mi/new-acerca-de-mi.component';
-import { EditAcercaDeMiComponent } from '../component/acerca-de-mi/edit-acerca-de-mi/edit-acerca-de-mi.component';
+
 import { EditPersonaComponent } from '../component/banner/edit-persona/edit-persona.component';
 
 
@@ -45,8 +44,6 @@ const routes:Routes=[
   {path:'nuevoproyecto', component: NewProyectosComponent},
   {path:'editarproyecto/:id', component: EditProyectosComponent},
 
-  {path:'nuevoacercademi', component: NewAcercaDeMiComponent},
-  {path:'editaracercademi/:id', component: EditAcercaDeMiComponent},
 
   {path:'editarpersona/:id', component: EditPersonaComponent}
 

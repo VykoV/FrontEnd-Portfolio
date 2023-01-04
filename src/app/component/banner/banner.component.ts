@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
-import { persona } from 'src/app/component/model/persona.model';
-import { PersonaService } from 'src/app/component/Service/persona.service';
-import { TokenService } from '../Service/token.service';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/Service/persona.service';
+import { TokenService } from 'src/app/Service/token.service';
 
 @Component({
   selector: 'app-banner',

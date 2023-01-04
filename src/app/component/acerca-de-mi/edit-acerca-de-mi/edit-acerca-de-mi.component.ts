@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AcercaDeMi } from '../../model/acercademi';
-import { AcercademiService } from '../../Service/acercademi.service';
+import { AcercaDeMi } from '../../../model/acercademi';
+import { AcercademiService } from 'src/app/Service/acercademi.service';
 
 @Component({
   selector: 'app-edit-acerca-de-mi',

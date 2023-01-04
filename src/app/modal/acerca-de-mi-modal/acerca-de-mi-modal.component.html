@@ -1,0 +1,36 @@
+<h4 class="text-end ">
+    <!-- Button trigger modal -->
+    <i class="bi bi-file-earmark-plus" data-bs-toggle="modal" data-bs-target="#crearAcercaDeMi"></i>
+
+</h4>
+
+<div class="modal fade" id="crearAcercaDeMi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header custom">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Acerca De Mi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body custom">
+
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="destacable">Destacable</label>
+                        <input type="text" class="form-control" id="destacable" [(ngModel)]="destacable"
+                            name="destacable" requerid>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="informacionAcercaDeMi">Informacion Acerca De Mi</label>
+                        <input type="text" class="form-control" id="informacionAcercaDeMi"
+                            [(ngModel)]="informacionAcercaDeMi" name="informacionAcercaDeMi" requerid>
+                    </div>
+                    <br />
+                    <div class="modal-footer justify-content-center" id="Custom">
+                        <button type="submit" class="btn btn-warning " data-bs-dismiss="modal">Actualizar
+                            informacion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ExperienciaLaboral } from '../../model/experienciaLaboral';
-import { ExperienciaLaboralService } from '../../Service/experiencialaboral.service';
+import { ExperienciaLaboral } from '../../../model/experienciaLaboral';
+import { ExperienciaLaboralService } from 'src/app/Service/experiencialaboral.service';
 
 @Component({
   selector: 'app-edit-experiencia-laboral',

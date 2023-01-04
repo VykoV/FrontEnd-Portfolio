@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
-import { Proyectos } from '../model/Proyectos';
-import { ProyectosService } from '../Service/proyectos.service';
-import { TokenService } from '../Service/token.service';
+import { Proyectos } from '../../model/Proyectos';
+import { ProyectosService } from 'src/app/Service/proyectos.service';
+import { TokenService } from 'src/app/Service/token.service';
 
 @Component({
   selector: 'app-proyectos',

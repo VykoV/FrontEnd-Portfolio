@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HardSkillFrontEnd } from '../../model/HardSkillFrontEnd';
-import { HardSkillFrontEndService } from '../../Service/hardskillfrontend.service';
+import { HardSkillFrontEnd } from '../../../model/HardSkillFrontEnd';
+import { HardSkillFrontEndService } from 'src/app/Service/hardskillfrontend.service';
 
 @Component({
   selector: 'app-new-hsfe',

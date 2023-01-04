@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AcercaDeMi } from '../../model/acercademi';
-import { AcercademiService } from '../../Service/acercademi.service';
+import { AcercaDeMi } from 'src/app/model/acercademi';
+import { AcercademiService } from 'src/app/Service/acercademi.service';
 
 @Component({
-  selector: 'app-new-acerca-de-mi',
-  templateUrl: './new-acerca-de-mi.component.html',
-  styleUrls: ['./new-acerca-de-mi.component.css']
+  selector: 'app-acerca-de-mi-modal',
+  templateUrl: './acerca-de-mi-modal.component.html',
+  styleUrls: ['./acerca-de-mi-modal.component.css']
 })
-export class NewAcercaDeMiComponent implements OnInit {
+export class AcercaDeMiModalComponent implements OnInit {
 
   destacable: String= '';
   informacionAcercaDeMi: String= '';

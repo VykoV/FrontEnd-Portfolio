@@ -12,9 +12,8 @@
                 </div>
                 
                 <div class="col-6 ">
-                    <h4 class="text-end ">
-                        <i class="bi bi-file-earmark-plus" routerLink="/nuevahsfe" *ngIf="isLogged"></i>
-                        </h4>
+                    
+                        <app-new-front-end-modal *ngIf="isLogged"></app-new-front-end-modal>
                 </div>
             </div>  
             <ul class="Moditems">
@@ -47,9 +46,7 @@
                     <h3>BackEnd</h3>
                 </div>
                 <div class="col-6 ">
-                    <h4 class="text-end ">
-                        <i class="bi bi-file-earmark-plus p-1" routerLink="/nuevahsbe" *ngIf="isLogged"></i>
-                    </h4>
+                    <app-new-back-end-modal *ngIf="isLogged"></app-new-back-end-modal>
                 </div>
             </div> 
             
@@ -82,10 +79,8 @@
                     <h3>SoftSkill</h3>
                 </div>
                 <div class="col-6 ">
-                    <h4 class="text-end ">
-                        <i class="bi bi-file-earmark-plus" routerLink="/nuevass" *ngIf="isLogged"></i>
-                        
-                    </h4>
+                    
+                    <app-new-soft-skill-modal *ngIf="isLogged"></app-new-soft-skill-modal>
                 </div>
             </div> 
             

@@ -15,7 +15,6 @@
     --Proyecto-color: #353535;
     --button-color: #1a1a1a;
     --pharagraph: #a7a9be;
-    
 }
 
 #modebg {
@@ -30,6 +29,11 @@
 .BG{
     background-color: var(--background-color);
 }
+
+#Custom{
+    background-color: var(--Proyecto-color);
+}
+
 #BGLogin{
     background-color: var(--Proyecto-color);
 }

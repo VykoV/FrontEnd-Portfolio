@@ -14,24 +14,27 @@ import { HomeComponent } from './component/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NewExperienciaLaboralComponent } from './component/experiencia/new-experiencia-laboral/new-experiencia-laboral.component';
 import { EditExperienciaLaboralComponent } from './component/experiencia/edit-experiencia-laboral/edit-experiencia-laboral.component';
 import { EditEducacionComponent } from './component/experiencia/EditEducacion/edit-educacion/edit-educacion.component';
-import { NewEducacionComponent } from './component/experiencia/NewEducacion/new-educacion/new-educacion.component';
-import { EditSSkillComponent } from './component/hard-and-soft-skills/edit-sskill/edit-sskill.component';
-import { NewSSkillComponent } from './component/hard-and-soft-skills/new-sskill/new-sskill.component';
-import { NewHSBEComponent } from './component/hard-and-soft-skills/new-hsbe/new-hsbe.component';
-import { EditHSBEComponent } from './component/hard-and-soft-skills/edit-hsbe/edit-hsbe.component';
-import { NewHSFEComponent } from './component/hard-and-soft-skills/new-hsfe/new-hsfe.component';
-import { EditHSFEComponent } from './component/hard-and-soft-skills/edit-hsfe/edit-hsfe.component';
-import { EditProyectosComponent } from './component/proyectos/edit-proyectos/edit-proyectos.component';
-import { NewProyectosComponent } from './component/proyectos/new-proyectos/new-proyectos.component';
 
-import { EditAcercaDeMiComponent } from './component/acerca-de-mi/edit-acerca-de-mi/edit-acerca-de-mi.component';
-import { EditPersonaComponent } from './component/banner/edit-persona/edit-persona.component';
+import { EditSSkillComponent } from 'src/app/modal/edit-sskill/edit-sskill.component';
+import { EditHSBEComponent } from './modal/edit-hsbe/edit-hsbe.component';
+import { EditHSFEComponent } from 'src/app/modal/edit-hsfe/edit-hsfe.component';
+import { EditProyectosComponent } from './modal/edit-proyectos/edit-proyectos.component';
+
+import { EditAcercaDeMiComponent } from './modal/edit-acerca-de-mi/edit-acerca-de-mi.component';
+import { EditPersonaComponent } from './modal/edit-persona/edit-persona.component';
 import { NewPersonaComponent } from './component/banner/new-persona/new-persona.component';
 import { AcercaDeMiModalComponent } from './modal/acerca-de-mi-modal/acerca-de-mi-modal.component';
-import { EditarAcercaDeMiComponent } from './modal/editar-acerca-de-mi/editar-acerca-de-mi.component';
+import { NewProyectoModalComponent } from './modal/new-proyecto-modal/new-proyecto-modal.component';
+import { NewEducacionModalComponent } from './modal/new-educacion-modal/new-educacion-modal.component';
+import { NewExperienciaLaboralModalComponent } from './modal/new-experiencia-laboral-modal/new-experiencia-laboral-modal.component';
+import { NewFrontEndModalComponent } from './modal/new-front-end-modal/new-front-end-modal.component';
+import { NewBackEndModalComponent } from './modal/new-back-end-modal/new-back-end-modal.component';
+import { NewSoftSkillModalComponent } from './modal/new-soft-skill-modal/new-soft-skill-modal.component';
+
+
+
 
 
 @NgModule({
@@ -45,24 +48,25 @@ import { EditarAcercaDeMiComponent } from './modal/editar-acerca-de-mi/editar-ac
     LoginComponent,
     BannerComponent,
     HomeComponent,
-    NewExperienciaLaboralComponent,
+
     EditExperienciaLaboralComponent,
     EditEducacionComponent,
-    NewEducacionComponent,
+
     EditSSkillComponent,
-    NewSSkillComponent,
-    NewHSBEComponent,
     EditHSBEComponent,
-    NewHSFEComponent,
     EditHSFEComponent,
     EditProyectosComponent,
-    NewProyectosComponent,
 
     EditAcercaDeMiComponent,
     EditPersonaComponent,
     NewPersonaComponent,
     AcercaDeMiModalComponent,
-    EditarAcercaDeMiComponent
+    NewProyectoModalComponent,
+    NewEducacionModalComponent,
+    NewExperienciaLaboralModalComponent,
+    NewFrontEndModalComponent,
+    NewBackEndModalComponent,
+    NewSoftSkillModalComponent,
 
   ],
   imports: [

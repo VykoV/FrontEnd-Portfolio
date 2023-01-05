@@ -24,10 +24,12 @@ export class AcercaDeMiModalComponent implements OnInit {
     this.acercaDeMiService.save(adm).subscribe(
       data => {
         alert("Acerca de mi agregada");
-        this.router.navigate(['']);
+        this.router.navigate(['home']);
+        window.location.reload();
       }, err => {
         alert("Error");
-        this.router.navigate(['']);
+        this.router.navigate(['home']);
+        window.location.reload();
       }
 
     )

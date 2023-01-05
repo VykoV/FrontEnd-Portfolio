@@ -1,0 +1,47 @@
+<h4 class="text-end ">
+    <!-- Button trigger modal -->
+    <i class="bi bi-file-earmark-plus" data-bs-toggle="modal" data-bs-target="#crearBackEnd"></i>
+</h4>
+
+<div class="modal fade" id="crearBackEnd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content " id="Custom">
+            <div class="modal-header custom">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Skill Back End</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body custom">
+
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="icono">Icono</label>
+                        <input type="text" class="form-control" id="icono" [(ngModel)]="icono" name="icono"
+                            requerid>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreBackEnd">Nombre de la skill Back End</label>
+                        <input type="text" class="form-control" id="nombreBackEnd" [(ngModel)]="nombreBackEnd" name="nombreBackEnd"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nivelBackEnd">Nivel Skill Back End</label>
+                        <input type="text" class="form-control" id="nivelBackEnd" [(ngModel)]="nivelBackEnd"
+                            name="nivelBackEnd" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="porcentaje">Porcentaje</label>
+                        <input type="text" class="form-control" id="porcentaje" [(ngModel)]="porcentaje"
+                            name="porcentaje" required>
+                    </div>
+                    
+                    <br />
+                    <div class="modal-footer justify-content-center" id="Custom">
+                        <button type="submit" class="btn btn-warning " data-bs-dismiss="modal">Actualizar
+                            informacion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

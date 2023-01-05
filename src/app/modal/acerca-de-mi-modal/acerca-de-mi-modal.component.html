@@ -6,12 +6,12 @@
 
 <div class="modal fade" id="crearAcercaDeMi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content ">
-            <div class="modal-header custom">
+        <div class="modal-content " id="Custom">
+            <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Agregar Acerca De Mi</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body custom">
+            <div class="modal-body ">
 
                 <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                     <div class="form-group">
@@ -26,7 +26,7 @@
                             [(ngModel)]="informacionAcercaDeMi" name="informacionAcercaDeMi" requerid>
                     </div>
                     <br />
-                    <div class="modal-footer justify-content-center" id="Custom">
+                    <div class="modal-footer justify-content-center">
                         <button type="submit" class="btn btn-warning " data-bs-dismiss="modal">Actualizar
                             informacion</button>
                     </div>
@@ -34,3 +34,4 @@
             </div>
         </div>
     </div>
+</div>

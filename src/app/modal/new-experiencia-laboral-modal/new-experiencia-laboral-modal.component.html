@@ -1,0 +1,55 @@
+<h4 class="text-end ">
+    <!-- Button trigger modal -->
+    <i class="bi bi-file-earmark-plus" data-bs-toggle="modal" data-bs-target="#crearExperiencialaboral"></i>
+</h4>
+
+<div class="modal fade" id="crearExperiencialaboral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content " id="Custom">
+            <div class="modal-header custom" >
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Experiencia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body custom">
+
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion</label>
+                        <input type="text" class="form-control" id="descripcion" [(ngModel)]="descripcion"
+                            name="descripcion" requerid>
+                    </div>
+                    <div class="form-group">
+                        <label for="imgEmpresa">Imagen de la Empresa</label>
+                        <input type="text" class="form-control" id="imgEmpresa" [(ngModel)]="imgEmpresa" name="imgEmpresa"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreEmpresa">Nombre de la Empresa</label>
+                        <input type="text" class="form-control" id="nombreEmpresa" [(ngModel)]="nombreEmpresa"
+                            name="nombreEmpresa" required>
+                    </div>
+                    <div class="form-group">
+        
+                        <label for="periodoPuestoFin">Fin del Puesto</label>
+                        <input type="text" class="form-control" id="periodoPuestoFin" [(ngModel)]="periodoPuestoFin"
+                            name="periodoPuestoFin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="periodoPuestoInicio">Inicio del puesto</label>
+                        <input type="text" class="form-control" id="periodoPuestoInicio" [(ngModel)]="periodoPuestoInicio"
+                            name="periodoPuestoInicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="puesto">Puesto</label>
+                        <input type="text" class="form-control" id="puesto" [(ngModel)]="puesto" name="puesto" required>
+                    </div>
+                    <br />
+                    <div class="modal-footer justify-content-center" id="Custom">
+                        <button type="submit" class="btn btn-warning " data-bs-dismiss="modal">Actualizar
+                            informacion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

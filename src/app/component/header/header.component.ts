@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { PorfolioService } from 'src/app/Service/porfolio.service';
-import { Subscription } from 'rxjs';
+import { Subject, Subscription } from 'rxjs';
 import { Observable } from 'rxjs';
 import { DOCUMENT } from '@angular/common'; 
 import { TokenService } from 'src/app/Service/token.service';
@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  
 })
 export class HeaderComponent implements OnInit {
   
@@ -23,13 +24,15 @@ export class HeaderComponent implements OnInit {
     private renderer: Renderer2,
     private router: Router,
     private tokenService:TokenService) { }
+  
+
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
       console.log(data);
       this.miporfolio=data;
     });
-    
+
     this.initializeTheme();
 
     if(this.tokenService.getToken()){
@@ -38,6 +41,7 @@ export class HeaderComponent implements OnInit {
       this.isLogged=false;
     }
   }
+
 
   switchTheme() {
     this.document.body.classList.replace(

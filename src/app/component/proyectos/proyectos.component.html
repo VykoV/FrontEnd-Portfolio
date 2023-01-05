@@ -7,14 +7,13 @@
                 <h3>Proyectos</h3>
             </div>
             <div class="col-6 ">
-                <h4 class="text-end "><i class="bi bi-file-earmark-plus" routerLink="/nuevoproyecto" *ngIf="isLogged"></i>
-                </h4>
+                <app-new-proyecto-modal></app-new-proyecto-modal>
             </div>
         </div>
 
-        <div class="row d-flex justify-content-around">
+        <div class="row d-flex justify-content-between">
                 <div class="col-auto " *ngFor="let pyt of proyectos">
-                    <div id="Proyectocolor1" class="card" style="width: 16rem;">
+                    <div id="Proyectocolor1" class="card" style="width: 16rem; margin-top: 12px;">
                         <img [src]="pyt.urlImgProyecto" class="card-img-top" alt="{{pyt.nombreProyecto}}">
                         <div class="card-body">
                             <div class="row">

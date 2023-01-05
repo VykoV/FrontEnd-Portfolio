@@ -9,7 +9,9 @@ import { TokenService } from 'src/app/Service/token.service';
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.css']
+  styleUrls: ['./proyectos.component.css'],
+  
+  
 })
 export class ProyectosComponent implements OnInit {
   
@@ -19,7 +21,8 @@ export class ProyectosComponent implements OnInit {
   isLogged = false;
 
   constructor(private proyectosService: ProyectosService,
-              private tokenService: TokenService) { }
+              private tokenService: TokenService
+              ) { }
 
   ngOnInit(): void {
     this.verProyectos();

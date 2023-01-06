@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from '../component/home/home.component';
 import { LoginComponent } from 'src/app/component/login/login.component';
-import { EditExperienciaLaboralComponent } from '../component/experiencia/edit-experiencia-laboral/edit-experiencia-laboral.component';
-import { EditEducacionComponent } from '../component/experiencia/EditEducacion/edit-educacion/edit-educacion.component';
+import { EditExperienciaLaboralComponent } from '../modal/edit-experiencia-laboral/edit-experiencia-laboral.component';
+import { EditEducacionComponent } from '../modal/edit-educacion/edit-educacion.component';
 import { EditSSkillComponent } from 'src/app/modal/edit-sskill/edit-sskill.component';
 import { EditHSFEComponent } from 'src/app/modal/edit-hsfe/edit-hsfe.component';
 import { EditHSBEComponent } from '../modal/edit-hsbe/edit-hsbe.component';

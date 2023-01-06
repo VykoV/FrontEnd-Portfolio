@@ -34,9 +34,9 @@ export class AcercaDeMiComponent implements OnInit {
       this.acercademi=data})
   }
   
-  deleteAcercaDeMi(id?: number) {
+  eliminarAcercaDeMi(id?: number) {
     if (id != undefined) {
-      this.acercademiService.delete(id).subscribe(
+      this.acercademiService.eliminar(id).subscribe(
         data => {
           this.verAcercaDeMi();
       }, err => {

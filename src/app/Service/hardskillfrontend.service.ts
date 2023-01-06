@@ -15,20 +15,20 @@ export class HardSkillFrontEndService {
     return this.httpClient.get<HardSkillFrontEnd[]>(this.url + 'ver');
   }
 
-  public detail(id: number): Observable<HardSkillFrontEnd> {
-    return this.httpClient.get<HardSkillFrontEnd>(this.url + `detail/${id}`);
+  public obtener(id: number): Observable<HardSkillFrontEnd> {
+    return this.httpClient.get<HardSkillFrontEnd>(this.url + `hsfe/${id}`);
   }
   //Guardar
-  public save(hardSkillFrontEnd: HardSkillFrontEnd): Observable<any> {
-    return this.httpClient.post<any>(this.url + 'new', hardSkillFrontEnd);
+  public guardar(hardSkillFrontEnd: HardSkillFrontEnd): Observable<any> {
+    return this.httpClient.post<any>(this.url + 'nuevo', hardSkillFrontEnd);
   }
   //Actualizar
-  public update(id: number, hardSkillFrontEnd: HardSkillFrontEnd): Observable<any> {
-    return this.httpClient.put<any>(this.url + `update/${id}`, hardSkillFrontEnd);
+  public actualizar(id: number, hardSkillFrontEnd: HardSkillFrontEnd): Observable<any> {
+    return this.httpClient.put<any>(this.url + `actualizar/${id}`, hardSkillFrontEnd);
   }
   //Eliminar
-  public delete(id: number): Observable<any> {
-    return this.httpClient.delete<any>(this.url + `delete/${id}`);
+  public eliminar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.url + `eliminar/${id}`);
   }
 
 }

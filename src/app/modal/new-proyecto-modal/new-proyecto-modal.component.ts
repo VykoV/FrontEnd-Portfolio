@@ -23,7 +23,7 @@ export class NewProyectoModalComponent implements OnInit {
 
   onCreate(): void {
     const proy = new Proyectos(this.nombreProyecto, this.descripcionProyecto, this.urlImgProyecto, this.urlRepositorio);
-    this.proyectosService.save(proy).subscribe(
+    this.proyectosService.guardar(proy).subscribe(
       data => {
         alert("Proyecto agregado");
         this.router.navigate(['home']);

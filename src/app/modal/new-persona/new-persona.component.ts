@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { persona } from '../../../model/persona.model';
+import { persona } from '../../model/persona.model';
 import { PersonaService } from 'src/app/Service/persona.service';
 
 @Component({
@@ -21,7 +21,7 @@ export class NewPersonaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreate(): void {
+  /*onCreate(): void {
     const ss = new persona(this.imgBanner, this.imgPerfil, this.nombrePerfil, this.titulo);
     this.personaService.save(ss).subscribe(
       data => {
@@ -33,5 +33,5 @@ export class NewPersonaComponent implements OnInit {
       }
 
     )
-  }
+  }*/
 }

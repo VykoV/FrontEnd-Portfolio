@@ -9,25 +9,25 @@ import { persona } from 'src/app/model/persona.model';
 export class PersonaService {
   url = 'http://localhost:8080/persona/';
   constructor(private httpClient: HttpClient) { }
-  //ver
+
   public lista(): Observable<persona[]> {
     return this.httpClient.get<persona[]>(this.url + 'ver');
   }
   
-  public detail(id: number): Observable<persona> {
-    return this.httpClient.get<persona>(this.url + `detail/${id}`);
+  public obtener(id: number): Observable<persona> {
+    return this.httpClient.get<persona>(this.url + `pers/${id}`);
   }
-  //Guardar
-  public save(Persona: persona): Observable<any> {
-    return this.httpClient.post<any>(this.url + 'new', Persona);
-  }
-  //Actualizar
-  public update(id: number, Persona: persona): Observable<any> {
-    return this.httpClient.put<any>(this.url + `update/${id}`, Persona);
+
+  /*public guardar(Persona: persona): Observable<any> {
+    return this.httpClient.post<any>(this.url + 'nuevo', Persona);
+  }*/
+ 
+  public actualizar(id: number, Persona: persona): Observable<any> {
+    return this.httpClient.put<any>(this.url + `actualizar/${id}`, Persona);
   }
   //Eliminar
-  public delete(id: number): Observable<any> {
-    return this.httpClient.delete<any>(this.url + `delete/${id}`);
-  }
+  /* public eliminar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.url + `eliminar/${id}`);
+  }*/
 
 }

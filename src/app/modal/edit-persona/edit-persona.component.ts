@@ -18,7 +18,7 @@ export class EditPersonaComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.detail(id).subscribe(
+    this.personaService.obtener(id).subscribe(
       data => {
         this.Persona = data;
       }, err => {
@@ -30,8 +30,9 @@ export class EditPersonaComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.update(id, this.Persona).subscribe(
+    this.personaService.actualizar(id, this.Persona).subscribe(
       data => {
+        alert("Persona Actualizada");
         this.router.navigate(['home']);
       }, err => {
         alert("Error al modificar");

@@ -11,25 +11,25 @@ export class ExperienciaLaboralService {
     [x: string]: any;
     url = 'http://localhost:8080/experiencialaboral/';
     constructor(private httpClient: HttpClient) { }
-//Ver
+
     public lista(): Observable<ExperienciaLaboral[]>{
     return this.httpClient.get<ExperienciaLaboral[]>(this.url+ 'ver');
     }
 
-    public detail(id: number): Observable<ExperienciaLaboral>{
-        return this.httpClient.get<ExperienciaLaboral>(this.url + `detail/${id}`);
+    public obtener(id: number): Observable<ExperienciaLaboral>{
+        return this.httpClient.get<ExperienciaLaboral>(this.url + `el/${id}`);
     } 
-//Guardar
-    public save(experienciaLaboral:ExperienciaLaboral): Observable<any>{
-        return this.httpClient.post<any>(this.url+'new',experienciaLaboral);
+
+    public guardar(experienciaLaboral:ExperienciaLaboral): Observable<any>{
+        return this.httpClient.post<any>(this.url+'nuevo',experienciaLaboral);
     }
-//Actualizar
-    public update(id: number, experienciaLaboral: ExperienciaLaboral): Observable<any>{
-        return this.httpClient.put<any>(this.url + `update/${id}`,experienciaLaboral);
-      }
-//Eliminar
-    public delete(id:number):Observable<any>{
-        return this.httpClient.delete<any>(this.url+`delete/${id}`);
+
+    public actualizar(id: number, experienciaLaboral: ExperienciaLaboral): Observable<any>{
+        return this.httpClient.put<any>(this.url + `actualizar/${id}`,experienciaLaboral);
+    }
+
+    public eliminar(id:number):Observable<any>{
+        return this.httpClient.delete<any>(this.url+`eliminar/${id}`);
     }
 
 }

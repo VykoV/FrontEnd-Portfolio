@@ -15,20 +15,20 @@ export class AcercademiService {
         return this.httpClient.get<AcercaDeMi[]>(this.url + 'ver');
     }
 
-    public detail(id: number): Observable<AcercaDeMi> {
-        return this.httpClient.get<AcercaDeMi>(this.url + `detail/${id}`);
+    public obtener(id: number): Observable<AcercaDeMi> {
+        return this.httpClient.get<AcercaDeMi>(this.url + `adm/${id}`);
     }
     //Guardar
-    public save(acercaDeMi: AcercaDeMi): Observable<any> {
-        return this.httpClient.post<any>(this.url + 'new', acercaDeMi);
+    public guardar(acercaDeMi: AcercaDeMi): Observable<any> {
+        return this.httpClient.post<any>(this.url + 'nuevo', acercaDeMi);
     }
     //Actualizar
-    public update(id: number, acercaDeMi: AcercaDeMi): Observable<any> {
-        return this.httpClient.put<any>(this.url + `update/${id}`, acercaDeMi);
+    public actualizar(id: number, acercaDeMi: AcercaDeMi): Observable<any> {
+        return this.httpClient.put<any>(this.url + `actualizar/${id}`, acercaDeMi);
     }
     //Eliminar
-    public delete(id: number): Observable<any> {
-        return this.httpClient.delete<any>(this.url + `delete/${id}`);
+    public eliminar(id: number): Observable<any> {
+        return this.httpClient.delete<any>(this.url + `eliminar/${id}`);
     }
 
 }

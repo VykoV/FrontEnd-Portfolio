@@ -14,8 +14,8 @@ import { HomeComponent } from './component/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { EditExperienciaLaboralComponent } from './component/experiencia/edit-experiencia-laboral/edit-experiencia-laboral.component';
-import { EditEducacionComponent } from './component/experiencia/EditEducacion/edit-educacion/edit-educacion.component';
+import { EditExperienciaLaboralComponent } from './modal/edit-experiencia-laboral/edit-experiencia-laboral.component';
+import { EditEducacionComponent } from './modal/edit-educacion/edit-educacion.component';
 
 import { EditSSkillComponent } from 'src/app/modal/edit-sskill/edit-sskill.component';
 import { EditHSBEComponent } from './modal/edit-hsbe/edit-hsbe.component';
@@ -24,7 +24,7 @@ import { EditProyectosComponent } from './modal/edit-proyectos/edit-proyectos.co
 
 import { EditAcercaDeMiComponent } from './modal/edit-acerca-de-mi/edit-acerca-de-mi.component';
 import { EditPersonaComponent } from './modal/edit-persona/edit-persona.component';
-import { NewPersonaComponent } from './component/banner/new-persona/new-persona.component';
+import { NewPersonaComponent } from './modal/new-persona/new-persona.component';
 import { AcercaDeMiModalComponent } from './modal/acerca-de-mi-modal/acerca-de-mi-modal.component';
 import { NewProyectoModalComponent } from './modal/new-proyecto-modal/new-proyecto-modal.component';
 import { NewEducacionModalComponent } from './modal/new-educacion-modal/new-educacion-modal.component';

@@ -18,7 +18,7 @@ export class EditSSkillComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.softSkillService.detail(id).subscribe(
+    this.softSkillService.obtener(id).subscribe(
       data => {
         this.softSkill = data;
       }, err => {
@@ -30,8 +30,9 @@ export class EditSSkillComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.softSkillService.update(id, this.softSkill).subscribe(
+    this.softSkillService.actualizar(id, this.softSkill).subscribe(
       data => {
+        alert("Soft Skill Actualizada");
         this.router.navigate(['home']);
       }, err => {
         alert("Error al modificar");

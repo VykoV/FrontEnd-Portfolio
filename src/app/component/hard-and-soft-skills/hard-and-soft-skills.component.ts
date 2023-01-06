@@ -49,7 +49,7 @@ export class HardAndSoftSkillsComponent implements OnInit {
   }
   deleteHardSkillFrontEnd(id?: number) {
     if (id != undefined) {
-      this.hardSkillFrontEndService.delete(id).subscribe(
+      this.hardSkillFrontEndService.eliminar(id).subscribe(
         data => {
           this.verHardSkillFrontEnd();
       }, err => {
@@ -64,7 +64,7 @@ export class HardAndSoftSkillsComponent implements OnInit {
   }
   deleteHardSkillBackEnd(id?: number) {
     if (id != undefined) {
-      this.hardSkillBackEndService.delete(id).subscribe(
+      this.hardSkillBackEndService.eliminar(id).subscribe(
         data => {
           this.verHardSkillBackEnd();
       }, err => {
@@ -80,7 +80,7 @@ export class HardAndSoftSkillsComponent implements OnInit {
 
   deleteSoftSkill(id?: number) {
     if (id != undefined) {
-      this.softSkillService.delete(id).subscribe(
+      this.softSkillService.eliminar(id).subscribe(
         data => {
           this.verSoftSkill();
       }, err => {

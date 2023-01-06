@@ -22,7 +22,7 @@ export class NewSoftSkillModalComponent implements OnInit {
   }
   onCreate(): void {
     const ss = new SoftSkill(this.icono, this.nombreSkill, this.nivelSkill, this.porcentaje);
-    this.softSkillService.save(ss).subscribe(
+    this.softSkillService.guardar(ss).subscribe(
       data => {
         alert("Soft Skill agregada");
         this.router.navigate(['home']);

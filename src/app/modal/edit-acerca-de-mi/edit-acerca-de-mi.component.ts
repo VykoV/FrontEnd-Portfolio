@@ -18,7 +18,7 @@ export class EditAcercaDeMiComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.acercaDeMiService.detail(id).subscribe(
+    this.acercaDeMiService.obtener(id).subscribe(
       data => {
         this.acercaDeMi = data;
       }, err => {
@@ -30,8 +30,9 @@ export class EditAcercaDeMiComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.acercaDeMiService.update(id, this.acercaDeMi).subscribe(
+    this.acercaDeMiService.actualizar(id, this.acercaDeMi).subscribe(
       data => {
+        alert("Acerca de mi Actualizado");
         this.router.navigate(['home']);
       }, err => {
         alert("Error al modificar");

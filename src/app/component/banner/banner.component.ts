@@ -34,16 +34,16 @@ export class BannerComponent implements OnInit {
     this.personaService.lista().subscribe(data =>{
       this.persona=data})
   }
-
-  deletePersona(id?: number) {
+/*
+  eliminarPersona(id?: number) {
     if (id != undefined) {
-      this.personaService.delete(id).subscribe(
+      this.personaService.eliminar(id).subscribe(
         data => {
           this.verPersona();
       }, err => {
         alert("No se pudo eliminar la persona");
       }
   )}
-  }
+  }*/
 }
 

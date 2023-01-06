@@ -17,7 +17,7 @@ export class EditHSFEComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.hardSkillFrontEndService.detail(id).subscribe(
+    this.hardSkillFrontEndService.obtener(id).subscribe(
       data => {
         this.hardSkillFrontEnd = data;
       }, err => {
@@ -29,8 +29,9 @@ export class EditHSFEComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.hardSkillFrontEndService.update(id, this.hardSkillFrontEnd).subscribe(
+    this.hardSkillFrontEndService.actualizar(id, this.hardSkillFrontEnd).subscribe(
       data => {
+        alert("Hard Skill FrontEnd Actualizado");
         this.router.navigate(['home']);
       }, err => {
         alert("Error al modificar");

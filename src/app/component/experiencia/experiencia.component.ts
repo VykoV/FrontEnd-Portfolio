@@ -48,7 +48,7 @@ export class ExperienciaComponent implements OnInit {
   
   deleteExperienciaLaboral(id?: number) {
     if (id != undefined) {
-      this.experienciaLaboralService.delete(id).subscribe(
+      this.experienciaLaboralService.eliminar(id).subscribe(
         data => {
           this.verExperienciaLaboral();
       }, err => {
@@ -65,7 +65,7 @@ export class ExperienciaComponent implements OnInit {
 
   deleteEducacion(id?: number) {
     if (id != undefined) {
-      this.educacionService.delete(id).subscribe(
+      this.educacionService.eliminar(id).subscribe(
         data => {
           this.verEducacion();
       }, err => {

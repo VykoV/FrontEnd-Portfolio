@@ -42,12 +42,15 @@ export class LoginComponent implements OnInit {
         this.tokenService.setAuthorities(data.authorities);
         this.roles = data.authorities;
         this.router.navigate(['home'])
+        
       }, err =>{
         this.isLogged = false;
         this.isLogginFail = true;
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
+        alert("Ingreso mal los datos");
         
       })
   }
+
 }

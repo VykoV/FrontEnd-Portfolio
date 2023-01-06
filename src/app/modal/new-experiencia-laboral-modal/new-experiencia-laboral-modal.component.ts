@@ -26,7 +26,7 @@ export class NewExperienciaLaboralModalComponent implements OnInit {
 
   onCreate(): void {
       const experiencia=new ExperienciaLaboral(this.descripcion,this.imgEmpresa,this.nombreEmpresa,this.periodoPuestoFin,this.periodoPuestoInicio,this.puesto);
-      this.experienciaLaboralService.save(experiencia).subscribe(
+      this.experienciaLaboralService.guardar(experiencia).subscribe(
           data=>{
               alert("Experiencia Laboral agregada");
               this.router.navigate(['home']);

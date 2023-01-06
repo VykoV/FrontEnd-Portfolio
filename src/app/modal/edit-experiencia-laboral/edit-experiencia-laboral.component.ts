@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ExperienciaLaboral } from '../../../model/experienciaLaboral';
+import { ExperienciaLaboral } from '../../model/experienciaLaboral';
 import { ExperienciaLaboralService } from 'src/app/Service/experiencialaboral.service';
 
 @Component({
@@ -18,7 +18,7 @@ export class EditExperienciaLaboralComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.experienciaLaboralService.detail(id).subscribe(
+    this.experienciaLaboralService.obtener(id).subscribe(
       data => {
         this.experienciaLaboral = data;
       }, err => {
@@ -30,8 +30,9 @@ export class EditExperienciaLaboralComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.experienciaLaboralService.update(id, this.experienciaLaboral).subscribe(
+    this.experienciaLaboralService.actualizar(id, this.experienciaLaboral).subscribe(
       data => {
+        alert("Experiencia Laboral Actualizado");
         this.router.navigate(['home']);
       }, err => {
         alert("Error al modificar");

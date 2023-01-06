@@ -18,7 +18,7 @@ export class EditHSBEComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.hardSkillBackEndService.detail(id).subscribe(
+    this.hardSkillBackEndService.obtener(id).subscribe(
       data => {
         this.hardSkillBackEnd = data;
       }, err => {
@@ -30,8 +30,9 @@ export class EditHSBEComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.hardSkillBackEndService.update(id, this.hardSkillBackEnd).subscribe(
+    this.hardSkillBackEndService.actualizar(id, this.hardSkillBackEnd).subscribe(
       data => {
+        alert("Hard Skill BackEnd Actualizado");
         this.router.navigate(['home']);
       }, err => {
         alert("Error al modificar");

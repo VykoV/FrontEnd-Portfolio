@@ -23,7 +23,7 @@ export class NewFrontEndModalComponent implements OnInit {
 
   onCreate(): void {
     const hsfe = new HardSkillFrontEnd(this.icono, this.nombreFrontEnd, this.nivelFrontEnd, this.porcentaje);
-    this.hardSkillFrontEndService.save(hsfe).subscribe(
+    this.hardSkillFrontEndService.guardar(hsfe).subscribe(
       data => {
         alert("Hard Skill Front End agregada");
         this.router.navigate(['home']);

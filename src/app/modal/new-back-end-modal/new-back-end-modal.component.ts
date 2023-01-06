@@ -23,7 +23,7 @@ export class NewBackEndModalComponent implements OnInit {
 
   onCreate(): void {
     const hsbe = new HardSkillBackEnd(this.icono, this.nombreBackEnd, this.nivelBackEnd, this.porcentaje);
-    this.hardSkillBackEndService.save(hsbe).subscribe(
+    this.hardSkillBackEndService.guardar(hsbe).subscribe(
       data => {
         alert("Hard Skill Back End agregada");
         this.router.navigate(['home']);

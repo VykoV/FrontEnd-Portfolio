@@ -21,7 +21,7 @@ export class AcercaDeMiModalComponent implements OnInit {
 
   onCreate(): void {
     const adm = new AcercaDeMi(this.destacable, this.informacionAcercaDeMi);
-    this.acercaDeMiService.save(adm).subscribe(
+    this.acercaDeMiService.guardar(adm).subscribe(
       data => {
         alert("Acerca de mi agregada");
         this.router.navigate(['home']);

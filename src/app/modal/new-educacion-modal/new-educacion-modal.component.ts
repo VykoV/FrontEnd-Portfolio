@@ -25,7 +25,7 @@ export class NewEducacionModalComponent implements OnInit {
 
   onCreate(): void {
     const educa=new Educacion(this.logo,this.nombreCurso,this.carreraCurso,this.titulo,this.periodoEstudiosFin,this.periodoEstudiosInicio);
-    this.educacionlService.save(educa).subscribe(
+    this.educacionlService.guardar(educa).subscribe(
         data=>{
             alert("Educacion agregada");
             this.router.navigate(['home']);

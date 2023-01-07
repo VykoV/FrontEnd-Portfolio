@@ -8,7 +8,9 @@ import { HardSkillBackEnd } from 'src/app/model/HardSkillBackEnd';
     providedIn: 'root'
 })
 export class HardSkillBackEndService {
-    url = 'http://localhost:8080/hardskillbackend/';
+    //url = 'http://localhost:8080/hardskillbackend/';
+    url='https://portfoliovvalli.onrender.com/hardskillbackend/';
+
     constructor(private httpClient: HttpClient) { }
 
     public lista(): Observable<HardSkillBackEnd[]> {

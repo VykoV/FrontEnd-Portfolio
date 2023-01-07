@@ -8,25 +8,24 @@ import { HardSkillFrontEnd } from 'src/app/model/HardSkillFrontEnd';
   providedIn: 'root'
 })
 export class HardSkillFrontEndService {
-  url = 'http://localhost:8080/hardskillfrontend/';
+  //url = 'http://localhost:8080/hardskillfrontend/';
+  url='https://portfoliovvalli.onrender.com/hardskillfrontend/';
+
+
   constructor(private httpClient: HttpClient) { }
-  //Ver
+
   public lista(): Observable<HardSkillFrontEnd[]> {
     return this.httpClient.get<HardSkillFrontEnd[]>(this.url + 'ver');
   }
-
   public obtener(id: number): Observable<HardSkillFrontEnd> {
     return this.httpClient.get<HardSkillFrontEnd>(this.url + `hsfe/${id}`);
   }
-  //Guardar
   public guardar(hardSkillFrontEnd: HardSkillFrontEnd): Observable<any> {
     return this.httpClient.post<any>(this.url + 'nuevo', hardSkillFrontEnd);
   }
-  //Actualizar
   public actualizar(id: number, hardSkillFrontEnd: HardSkillFrontEnd): Observable<any> {
     return this.httpClient.put<any>(this.url + `actualizar/${id}`, hardSkillFrontEnd);
   }
-  //Eliminar
   public eliminar(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.url + `eliminar/${id}`);
   }

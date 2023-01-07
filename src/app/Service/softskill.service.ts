@@ -9,7 +9,9 @@ import { SoftSkill } from 'src/app/model/SoftSkill';
     providedIn: 'root'
 })
 export class SoftSkillService {
-    url = 'http://localhost:8080/softskill/';
+    //url = 'http://localhost:8080/softskill/';
+    url='https://portfoliovvalli.onrender.com/softskill/';
+
     constructor(private httpClient: HttpClient) { }
 
     public lista(): Observable<SoftSkill[]>{

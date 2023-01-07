@@ -8,7 +8,8 @@ import { AcercaDeMi } from 'src/app/model/acercademi';
     providedIn: 'root'
 })
 export class AcercademiService {
-    url = 'http://localhost:8080/acercademi/';
+    //url = 'http://localhost:8080/acercademi/';
+    url='https://portfoliovvalli.onrender.com/acercademi/';
     constructor(private httpClient: HttpClient) { }
     //ver
     public lista(): Observable<AcercaDeMi[]> {

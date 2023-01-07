@@ -7,7 +7,8 @@ import { persona } from 'src/app/model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  url = 'http://localhost:8080/persona/';
+  //url = 'http://localhost:8080/persona/';
+  url='https://portfoliovvalli.onrender.com/persona/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]> {

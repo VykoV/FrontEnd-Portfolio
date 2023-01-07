@@ -9,7 +9,9 @@ import { ExperienciaLaboral } from 'src/app/model/experienciaLaboral';
 })
 export class ExperienciaLaboralService {
     [x: string]: any;
-    url = 'http://localhost:8080/experiencialaboral/';
+    //url = 'http://localhost:8080/experiencialaboral/';
+    url='https://portfoliovvalli.onrender.com/experiencialaboral/';
+
     constructor(private httpClient: HttpClient) { }
 
     public lista(): Observable<ExperienciaLaboral[]>{
